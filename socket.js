@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 require("dotenv").config();
 const io = require("socket.io")(server, {
     cors: {
-        origin: true,
+        origin: ["http://asconlineapp.com/", "http://18.136.32.45:4200"],
         methods: ["GET", "POST"],
     },
 });
