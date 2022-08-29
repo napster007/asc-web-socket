@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 require("dotenv").config();
 const io = require("socket.io")(server, {
     cors: {
-        origin: "*",
+        origin: true,
         methods: ["GET", "POST"],
     },
 });
