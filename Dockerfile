@@ -10,6 +10,8 @@ COPY ./package*.json ./
 COPY . .
 COPY dev.env .env
 
+RUN npm install
+
 ENV NODE_ENV production
 
 EXPOSE 3000
